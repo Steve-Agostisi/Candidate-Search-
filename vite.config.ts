@@ -8,5 +8,6 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // Bind to 0.0.0.0 to allow external access
     port: parseInt(process.env.PORT || '3000'), // Use Render's PORT environment variable or default to 3000
+    allowedHosts: ['candidate-search-jcn8.onrender.com'], // Add your Render host here
   },
 });
